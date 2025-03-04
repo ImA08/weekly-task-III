@@ -252,7 +252,7 @@ nav > svg {
   justify-content: center;
   align-items: center; 
   gap: 34px;
-  align-self: flex-start;
+  align-self: flex-start;  
 }
 
 .choose-cinema .cinema {
