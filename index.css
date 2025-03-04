@@ -80,6 +80,10 @@ nav > svg {
   display: none;
 }
 
+nav .burger-menu {
+  display: none;
+}
+
 /* HERO SECTION */
 
 .hero-section {
@@ -613,9 +617,62 @@ MEDIA QUERRY
   nav div:nth-child(3) {
     display: none;
   }
+  
+  nav .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
 
-  nav > svg {
+  nav .burger-menu .line:nth-child(1){
+    position: absolute;
+    border-top: 2px solid black;    
+    width: 16px;
+    height: 2px;
+    display: block;    
+  }
+
+  nav .burger-menu .line:nth-child(2){
+    position: absolute;
+    border-top: 2px solid black;    
+    width: 8px;
+    height: 2px;
     display: block;
+    top: 9px;
+    right: 8px;
+  }
+
+  nav .burger-menu .line:nth-child(3){
+    position: absolute;
+    border-bottom: 2px solid black;    
+    width: 16px;
+    height: 2px;
+    display: block;
+    bottom: 5px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(1) {
+    transition: 2s;
+    rotate: -45deg;
+    transform-origin: top right;
+    width: 23px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(2) {
+    transition: 500ms;
+    /* rotate: -45deg; */
+    transform-origin: top right;
+    width: 0px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(3) {
+    transition: 2s;
+    rotate: 45deg;
+    transform-origin: top right;
+    width: 23px;
   }
 
   /* HERO SECTION` */
@@ -665,8 +722,7 @@ MEDIA QUERRY
 
   .movies .movie-list,
   .upcomin-movies .movie-list {
-    flex-wrap: nowrap;
-    align-items: start;
+    overflow: hidden;
     width: 327px;
   }
 
