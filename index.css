@@ -1,7 +1,7 @@
 :root {
   --primary-color: #1d4ed8;
   --secondary-color: #a0a3bd;
-  --font-secondary : #6E7191;
+  --font-secondary: #6e7191;
 }
 
 * {
@@ -15,13 +15,19 @@ body {
 
 nav {
   display: flex;
+  width: 100%;
   font-size: 14px;
+  position: sticky;
+  z-index: 99;
+  top: 0;
   height: 104px;
+  width: auto;
   padding: 27px 0;
   justify-content: space-around;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.03);
   align-items: center;
+  background: #fff;
 }
 
 nav > a > img {
@@ -126,30 +132,30 @@ nav > svg {
   background: url("./assets/imgs/Rectangle\ 35.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   grid-area: a;
-  border-radius: 15px 15px 0 0;  
+  border-radius: 15px 15px 0 0;
 }
 
 .hero-section .hero-images div:nth-child(2) {
-  background: url('./assets/imgs/Rectangle\ 36.jpg');
+  background: url("./assets/imgs/Rectangle\ 36.jpg");
   grid-area: b;
-  border-radius: 15px 15px 0 0;  
+  border-radius: 15px 15px 0 0;
 }
 
 .hero-section .hero-images div:nth-child(3) {
-  background: url('./assets/imgs/Rectangle\ 37.jpg');
+  background: url("./assets/imgs/Rectangle\ 37.jpg");
   grid-area: c;
-  border-radius: 0 0 15px 15px;  
+  border-radius: 0 0 15px 15px;
 }
 
 .hero-section .hero-images div:nth-child(4) {
-  background: url('./assets/imgs/Rectangle\ 38.jpg');
+  background: url("./assets/imgs/Rectangle\ 38.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: d;
-  border-radius: 0 0 15px 15px;  
+  border-radius: 0 0 15px 15px;
 }
 
 /* WCU SECTION */
@@ -195,11 +201,11 @@ nav > svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 39px;  
+  margin-bottom: 39px;
+  margin-left: 130px;
 }
 
-.movies p:nth-child(1),
-.upcomin-movies p:nth-child(1) {
+.movies p:nth-child(1) {
   margin-bottom: 14px;
   font-size: 18px;
   font-weight: 700;
@@ -223,19 +229,146 @@ nav > svg {
 
 .movies .movie-list,
 .upcomin-movies .movie-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 265px 265px 265px 265px;
+  grid-template-rows: 490px;
+  grid-template-areas: "M1 M2 M3 M4";
   gap: 16px;
-  justify-content: space-evenly;
 }
 
-.movies .movie-list div,
-.upcomin-movies .movie-list div {
-  padding-top: 19px;
+.movies .movie-list .movie > div,
+.upcomin-movies .movie-list .movie > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.movies .movie-list img {
+.movies .movie-list .movie:nth-child(1),
+.upcomin-movies .movie-list .movie:nth-child(1) {
+  grid-area: M1;
+}
+
+.movies .movie-list .movie:nth-child(2),
+.upcomin-movies .movie-list .movie:nth-child(2) {
+  grid-area: M2;
+}
+
+.movies .movie-list .movie:nth-child(2),
+.upcomin-movies .movie-list .movie:nth-child(2) {
+  grid-area: M2;
+}
+
+.movies .movie-list .movie:nth-child(3),
+.upcomin-movies .movie-list .movie:nth-child(3) {
+  grid-area: M3;
+}
+
+.movies .movie-list .movie:nth-child(4),
+.upcomin-movies .movie-list .movie:nth-child(4) {
+  grid-area: M4;
+}
+
+.movies .movie-list .desc,
+.upcomin-movies .movie-list .desc {
+  margin-top: 19px;
+}
+
+.movies .movie-list .img,
+.upcomin-movies .movie-list .img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 405px;
+}
+
+.movies .movie-list .movie:nth-child(1) .img,
+.upcomin-movies .movie-list .movie:nth-child(1) .img {
+  background: url("./assets/png/movie-h-1.png");
+}
+
+.movies .movie-list .movie:nth-child(2) .img,
+.upcomin-movies .movie-list .movie:nth-child(2) .img {
+  background: url("./assets/png/movie-h-2.png");
+}
+
+.movies .movie-list .movie:nth-child(3) .img,
+.upcomin-movies .movie-list .movie:nth-child(3) .img {
+  background: url("./assets/png/movie-h-3.png");
+}
+
+.movies .movie-list .movie:nth-child(4) .img,
+.upcomin-movies .movie-list .movie:nth-child(4) .img {
+  background: url("./assets/png/movie-h-4.png");
+}
+
+.movies .movie .detail,
+.upcomin-movies .movie .detail {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.movies .movie .detail div,
+.upcomin-movies .movie .detail div {
+  width: 188px;
+  height: 48px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies .movie > div .img:hover,
+.upcomin-movies .movie > div .img:hover {
+  scale: 1.1;
+}
+
+.movies .movie .img:hover .detail,
+.upcomin-movies .movie .img:hover .detail {
+  visibility: visible;
+}
+
+.movies .movie-list .img::before,
+.upcomin-movies .movie-list .img::before {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.movies .movie-list .img:hover::before,
+.upcomin-movies .movie-list .img:hover::before {
+  visibility: visible;
+}
+
+.movies .movie .detail div:hover,
+.upcomin-movies .movie .detail div:hover {
+  background-color: var(--primary-color);
+  scale: 1.05;
+}
+
+.movies .movie .detail a,
+.upcomin-movies .movie .detail a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.movies .movie-list .movie .desc,
+.upcomin-movies .movie-list .movie .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 18px;
 }
 
 .movies .movie-list .movie-title,
@@ -248,6 +381,7 @@ nav > svg {
 .upcomin-movies .movie-list .genres {
   display: flex;
   gap: 7px;
+  margin-top: 11px;
 }
 
 .movies .movie-list .genres p,
@@ -279,7 +413,6 @@ nav > svg {
   font-size: 18px;
   font-weight: 700;
   color: var(--primary-color);
-  /* align-self: flex-start; */
 }
 
 .upcomin-movies > h2 {
@@ -290,13 +423,37 @@ nav > svg {
 }
 
 .upcomin-movies > div {
-  width: 1105px;
   display: flex;
+  width: 1105px;
   justify-content: space-between;
+  align-items: start;
 }
 
-.upcomin-movies > div img {
-  align-self: flex-end;
+.upcomin-movies > div .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.upcomin-movies > div .arrows a {
+  background-image: url("./assets/icon/arrow-up.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 69px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.upcomin-movies > div .arrows a:first-child {  
+  rotate: 180deg;
+}
+
+.upcomin-movies > div .arrows a:hover{
+  scale: 1.1;
 }
 
 /* SEND EMAIL SECTION */
@@ -326,30 +483,24 @@ nav > svg {
   gap: 11px;
 }
 
-.send-email .email-form div {
+.send-email .email-form input {
   border: 1px solid #fff;
   border-radius: 10px;
   width: 230px;
   height: 60px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-indent: 20px;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
-.send-email .email-form div:nth-child(1):hover,
-.send-email .email-form div:nth-child(2):hover{
-  cursor: text;
+.send-email .email-form input::placeholder {
+  color: #fff;
 }
 
-.send-email .email-form div:nth-child(3):hover{
-  cursor: pointer;
-}
-
-
-.send-email .email-form div:last-child {
+.send-email .email-form button {
   border: 1px solid var(--primary-color);
+  width: 218px;
+  border-radius: 15px;
   background-color: #fff;
   color: var(--primary-color);
 }
@@ -380,18 +531,18 @@ footer > div > div p {
   color: var(--font-secondary);
 }
 
-footer > div div:nth-child(2) div{
-display: flex;
-flex-direction: column;
-gap: 14px;
+footer > div div:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-footer > div div:nth-child(2) a{
-text-decoration: none;
-color: var(--font-secondary);
+footer > div div:nth-child(2) a {
+  text-decoration: none;
+  color: var(--font-secondary);
 }
 
-footer > div div:nth-child(3) div{
+footer > div div:nth-child(3) div {
   display: flex;
   flex-direction: column;
 }
@@ -424,7 +575,6 @@ footer > div div:nth-child(4) a {
   font-size: 14px;
   font-weight: 600;
   color: var(--font-secondary);
-  ;
 }
 
 footer > div div:nth-child(4) a img {
@@ -503,7 +653,7 @@ MEDIA QUERRY
 
   /* MOVIE LIST */
 
-  .movies > h2{
+  .movies > h2 {
     width: 327px;
   }
 
@@ -537,31 +687,29 @@ MEDIA QUERRY
   .send-email .email-form {
     flex-direction: column;
   }
- 
-/* FOOTER SECTION */
+
+  /* FOOTER SECTION */
 
   footer > div {
     flex-direction: column;
     margin-left: 80px;
   }
 
-  
-
-  footer > div div:nth-child(3) div{
-  flex-direction: row;
-  gap: 24px;
+  footer > div div:nth-child(3) div {
+    flex-direction: row;
+    gap: 24px;
   }
 
   footer > div div:nth-child(3) > div img:nth-of-type(1) {
     width: 81px;
     height: 30px;
   }
-  
+
   footer > div div:nth-child(3) > div img:nth-of-type(2) {
     width: 81px;
     height: 30px;
   }
-  
+
   footer > div div:nth-child(3) > div img:nth-of-type(3) {
     width: 81px;
     height: 30px;
@@ -575,5 +723,4 @@ MEDIA QUERRY
   footer > div div:nth-child(4) span {
     display: none;
   }
-  
 }
