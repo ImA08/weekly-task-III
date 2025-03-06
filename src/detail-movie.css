@@ -13,6 +13,10 @@ body {
   font-family: "Mulish", serif;
 }
 
+body > * {
+  padding: 0 230px;
+}
+
 nav {
   display: flex;
   font-size: 14px;
@@ -78,6 +82,11 @@ nav > svg {
 .heading {
   display: flex;
   flex-direction: column;
+  padding: 0;
+}
+
+.heading div:nth-child(2){
+  padding: 0 180px;
 }
 
 .heading .bg-img-heading {
@@ -98,20 +107,19 @@ nav > svg {
 
 .heading div:nth-child(2){
     margin-top: 5px;
-    position: relative;
-    margin-left: 130px;
+    display: flex;
 }
 
 .heading div:nth-child(2) > img {
-    position: absolute;
+    position: relative;
     top: -163px;
     z-index: 1;
 }
 
 .heading div:nth-child(2) .details {
+  padding: 23px 37px;
     display: flex;
     flex-direction: column;
-    margin-left: 283px;
     gap: 22px;
 
 }
@@ -124,9 +132,10 @@ nav > svg {
 }
 
 .heading .details .genres {
-    display: flex;
+    display: flex;    
     margin: 0;
     gap: 7px;
+    padding: 0;
 }
 
 .heading .details .genres p {    
@@ -159,7 +168,10 @@ nav > svg {
 
 .heading .details div:nth-child(3) div,
 .heading .details div:nth-child(4) div {
-    margin: 0;    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 .heading .details div:nth-child(3) div p,
@@ -184,7 +196,7 @@ nav > svg {
     flex-direction: column;
     gap: 4px;
     margin-top: 32px;
-    width: 821px;
+    padding: 0 230px;
 }
 
 .heading  .synopsis h2 {
@@ -199,7 +211,6 @@ nav > svg {
 /* BOOK TICKET SECTION  */
 .book-ticket {
     margin-top: 55px;
-    margin-left: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,9 +245,9 @@ nav > svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 34px;
     text-decoration: none;
     color: #fff;
+    align-self: flex-end;
 }
 
 .choose-cinema {
@@ -244,13 +255,11 @@ nav > svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 0 130px;
 }
 
 .choose-cinema .head{
   display: flex;
-  justify-content: center;
-  align-items: center; 
+  flex-direction: column;
   gap: 34px;
   align-self: flex-start;  
 }
@@ -259,7 +268,6 @@ nav > svg {
   display: flex;
   justify-content: center;
   align-items: center;  
-  margin-top: 38px;
   gap: 17px;
 }
 
@@ -281,7 +289,6 @@ nav > svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 37px;
   gap: 8px;
 }
 
@@ -308,7 +315,6 @@ font-size: 18px;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
   color: #fff;
-  margin-top: 57px;
   font-weight: 400;
   font-size: 14px;
   border-radius: 10px;
@@ -327,10 +333,10 @@ font-size: 18px;
   background-color: var(--primary-color);
   width: 1106px;
   height: 318px;
-  margin-top: 80px;
-  margin-left: 200px;
+  /* margin-top: 80px; */
   border: 1px solid #2563eb;
   border-radius: 25px;
+  margin: 80px 230px;
 }
 
 .send-email > h2 {
@@ -344,29 +350,25 @@ font-size: 18px;
   gap: 11px;
 }
 
-.send-email .email-form div {
+.send-email .email-form input {
   border: 1px solid #fff;
   border-radius: 10px;
   width: 230px;
   height: 60px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-indent: 20px;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
-.send-email .email-form div:nth-child(1):hover,
-.send-email .email-form div:nth-child(2):hover {
-  cursor: text;
+.send-email .email-form input::placeholder {
+  color: #fff;
 }
 
-.send-email .email-form div:nth-child(3):hover {
-  cursor: pointer;
-}
-
-.send-email .email-form div:last-child {
+.send-email .email-form button {
   border: 1px solid var(--primary-color);
+  height: 60px;
+  width: 230px;
+  border-radius: 15px;
   background-color: #fff;
   color: var(--primary-color);
 }
@@ -380,12 +382,10 @@ footer > div {
   display: flex;
   align-items: start;
   justify-content: space-around;
-  margin-left: 130px;
   margin-bottom: 45px;
 }
 
 footer > div > div {
-  width: 285;
   flex-direction: column;
   margin-top: 95px;
   display: flex;
@@ -463,6 +463,10 @@ footer > p {
   */
 
 @media (max-width: 480px) {
+body > *{
+  padding: 24px;
+}
+
   /* NAV SECTION */
 
   nav {
@@ -484,22 +488,34 @@ footer > p {
     display: block;
   }
 
+  .heading div:nth-child(2) > img {
+    padding: 24px;
+  }
+  
+  .heading div:nth-child(2) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .heading .synopsis {
+    padding: 0 24px;
+  }
+
+  /* BOOK TICKET  */
+  .book-ticket > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .choose-cinema .cinema {
+    flex-direction: column;
+  }
+
   /* SEND EMAIL SECTION */
 
   .send-email {
-    width: 327px;
-    margin-left: 80px;
-    height: 540px;
-    padding: 36px;
-  }
-
-  .send-email > h2 {
-    text-align: center;
-    font-size: 32px;
-  }
-
-  .send-email .email-form {
-    flex-direction: column;
+    display: none;    
   }
 
   /* FOOTER SECTION */
