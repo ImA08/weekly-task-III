@@ -733,7 +733,7 @@ MEDIA QUERRY
 
   .movies .movie-list,
   .upcomin-movies .movie-list {
-    overflow: hidden;
+    overflow: scroll;
     width: 327px;
     grid-template-rows: 520px;
   }
