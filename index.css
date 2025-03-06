@@ -661,7 +661,7 @@ MEDIA QUERRY
   }
 
   nav .burger-menu:hover .line:nth-child(1) {
-    transition: 2s;
+    transition: .2s;
     rotate: -45deg;
     transform-origin: top right;
     width: 23px;
@@ -675,7 +675,7 @@ MEDIA QUERRY
   }
 
   nav .burger-menu:hover .line:nth-child(3) {
-    transition: 2s;
+    transition: .2s;
     rotate: 45deg;
     transform-origin: top right;
     width: 23px;
