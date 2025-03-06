@@ -475,68 +475,6 @@ nav .burger-menu {
   color: #fff;
 }
 
-/* == Copy-Code :index.html == */
-
-/* .movies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 39px;  
-  }
-  
-  .movies p:nth-child(1),{
-    margin-bottom: 14px;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--primary-color);
-  } 
-    
-  .movies p:nth-child(4) {
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 38px;
-  }
-  
-  .movies .movie-list,{
-    display: flex;
-    gap: 16px;
-    justify-content: space-evenly;
-  }
-  
-  .movies .movie-list div,{
-    padding-top: 19px;
-  }
-  
-  .movies .movie-list img {
-    width: 264px;
-    height: 405px;
-  }
-  
-  .movies .movie-list .movie-title,{
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .movies .movie-list .genres,{
-    display: flex;
-    gap: 7px;
-  }
-  
-  .movies .movie-list .genres p,{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--secondary-color);
-    border-radius: 25px;
-    background-color: rgba(160, 163, 189, 0.1);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--secondary-color);
-    height: 30px;
-    width: 110px;
-  } */
-
 /* SEND EMAIL SECTION */
 .send-email {
   display: flex;
