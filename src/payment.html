@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./payment.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+    <nav>
+      <a href="./index.html">
+        <img src="../assets/svg/tickitz-1.svg" alt="" />
+      </a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="./movie-list.html">Movie</a>
+        <a href="">Buy Ticket</a>
+      </div>
+      <div>
+        <a href=""><div>SignIn</div></a>
+        <a href="./register.html"><div>Sign Up</div></a>
+      </div>
+
+      <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR SECTION END -->
+
+    <!-- STEPS SECTION START -->
+    <main>
+      <section class="steps-info">
+        <div>
+          <div class="step"></div>
+          <p>Dates and Time</p>
+        </div>
+        <div></div>
+        <div>
+          <div class="step"></div>
+          <p>Seat</p>
+        </div>
+        <div></div>
+        <div>
+          <div class="step">3</div>
+          <p>Payment</p>
+        </div>
+      </section>
+
+      <!-- STEPS SECTION END -->
+
+      <form class="payment">
+        <!-- PAYMENT INFO START -->
+
+        <div class="payment-info">
+          <h2>Payment Info</h2>
+
+          <h3>DATE & TIME</h3>
+          <p>Tuesday, 07 July 2020 at 02:00pm</p>
+          <div></div>
+
+          <h3>MOVIE TITLE</h3>
+          <p>Spider-Man: Homecoming</p>
+          <div></div>
+
+          <h3>CINEMA NAME</h3>
+          <p>CineOne21 Cinema</p>
+          <div></div>
+
+          <h3>NUMBER OF TICKETS</h3>
+          <p>3 pieces</p>
+          <div></div>
+
+          <h3>TOTAL PAYMENT</h3>
+          <p>$30,00</p>
+          <div></div>
+        </div>
+
+        <!-- PAYMENT INFO END -->
+
+        <!-- PERSONAL INFORMATION START -->
+
+        <div class="personal-information">
+          <h2>Personal Information</h2>
+          <label for="fname">Full Name</label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Input full name . . ."
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Input email . . ."
+          />
+
+          <label for="phone-number">Phone Number</label>
+          <input
+            type="text"
+            name="phone-number"
+            id="phone-number"
+            placeholder="Input phone number . . ."
+          />
+        </div>
+
+        <!-- PERSONAL INFORMATION END -->
+
+        <!-- PAYMENT METHOD START  -->
+        <div class="payment-method">
+          <h2>Payment Method</h2>
+          <div class="pay-method-select">
+            <label for="gpay">
+              <input type="radio" name="pay-method" id="gpay" />
+            </label>
+            <label for="visa">
+              <input type="radio" name="pay-method" id="visa" />
+            </label>
+            <label for="gopay"
+              ><input type="radio" name="pay-method" id="gopay"
+            /></label>
+            <label for="paypal"
+              ><input type="radio" name="pay-method" id="paypal"
+            /></label>
+            <label for="dana"
+              ><input type="radio" name="pay-method" id="dana"
+            /></label>
+            <label for="bca"
+              ><input type="radio" name="pay-method" id="bca"
+            /></label>
+
+            <label for="bri"
+              ><input type="radio" name="pay-method" id="bri"
+            /></label>
+            <label for="ovo"
+              ><input type="radio" name="pay-method" id="ovo"
+            /></label>
+          </div>
+        </div>
+        <!-- PAYMENT METHOD END -->
+      </form>
+    </main>
+
+    <section class="pop-up">
+      <h2>Payment Info</h2>
+      <div class="rek-info">
+        <p>No. Rekening Virtual :</p>
+        <span class="rek-num">12321328913829724</span>
+        <button class="copy-btn">copy</button>
+      </div>
+      <div class="total-payment">
+        <p>Total Payment :</p>
+        <span>$30</span>
+      </div>
+      <div>
+        <p>
+          Pay this payment bill before it is due, on
+          <span class="deadline">June 23, 2023</span>. If the bill has not been
+          paid by the specified time, it will be forfeited
+        </p>
+      </div>
+
+      <div class="option-btn">
+        <button class="check-payment">Check Payment</button>
+      <button>Paylater</button>
+      </div>
+      
+    </section>
+
+    <!-- FOOTER START  -->
+    <footer>
+      <div>
+        <div>
+          <a href="">
+            <img src="../assets/svg/tickitz-1.svg" alt="" />
+          </a>
+          <p>
+            Stop waiting in line. Buy tickets conveniently, watch movies
+            quietly.
+          </p>
+        </div>
+
+        <div>
+          <h2>Explore</h2>
+          <div>
+            <a href="">Cinemas</a>
+            <a href="">Movies List</a>
+            <a href="">My Ticket</a>
+            <a href="">Notification</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Our Sponsor</h2>
+          <div>
+            <img src="../assets/svg/ebv.id 2.svg" alt="" />
+            <img src="../assets/svg/CineOne21 2.svg" alt="" />
+            <img src="../assets/svg/hiflix 2.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <h2>Follow Us</h2>
+          <div>
+            <a href=""
+              ><img src="../assets/svg/eva_facebook-outline.svg" alt="" /><span
+                >spaTickitz Cinema id</span
+              ></a
+            >
+            <a href=""
+              ><img src="../assets/svg/bx_bxl-instagram.svg" alt="" /><span
+                >spatickitz.id</span
+              ></a
+            >
+            <a href=""
+              ><img src="../assets/svg/eva_twitter-outline.svg" alt="" /><span
+                >spatickitz.id</span
+              ></a
+            >
+            <a href=""
+              ><img src="../assets/svg/feather_youtube.svg" alt="" /><span
+                >spaTickitz Cinema id</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+      <p>© 2020 Tickitz. All Rights Reserved.</p>
+    </footer>
+    <!-- FOOTER END  -->
+  </body>
+</html>
