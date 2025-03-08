@@ -134,7 +134,7 @@ nav .burger-menu {
 
   border: #008000;
   border-radius: 50%;
-  background: url("../assets/icon/check-small.svg");
+  background: url("../../assets/icon/check-small.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -252,36 +252,36 @@ nav .burger-menu {
 }
 
 .payment-method .pay-method-select label:nth-child(1) {
-  background: url("../assets/icon/payment-method/logos_google-pay.svg")
+  background: url("../../assets/icon/payment-method/logos_google-pay.svg")
     no-repeat center;
 }
 
 .payment-method .pay-method-select label:nth-child(2) {
-  background: url("../assets/icon/payment-method/logos_visa.svg")
+  background: url("../../assets/icon/payment-method/logos_visa.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(3) {
-  background: url("../assets/icon/payment-method/Logo\ GoPay\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
+  background: url("../../assets/icon/payment-method/Logo\ GoPay\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(4) {
-  background: url("../assets/icon/payment-method/logos_paypal.svg")
+  background: url("../../assets/icon/payment-method/logos_paypal.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(5) {
-  background: url("../assets/icon/payment-method/Logo\ DANA\ \(PNG-240p\)\ -\ FileVector69\ 1.svg")
+  background: url("../../assets/icon/payment-method/Logo\ DANA\ \(PNG-240p\)\ -\ FileVector69\ 1.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(6) {
-  background: url("../assets/icon/payment-method/Bank\ BCA\ Logo\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
+  background: url("../../assets/icon/payment-method/Bank\ BCA\ Logo\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(7) {
-  background: url("../assets/icon/payment-method/Bank\ BRI\ \(Bank\ Rakyat\ Indonesia\)\ Logo\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
+  background: url("../../assets/icon/payment-method/Bank\ BRI\ \(Bank\ Rakyat\ Indonesia\)\ Logo\ \(SVG-240p\)\ -\ FileVector69\ 1.svg")
     no-repeat center;
 }
 .payment-method .pay-method-select label:nth-child(8) {
-  background: url("../assets/icon/payment-method/Vector.svg")
+  background: url("../../assets/icon/payment-method/Vector.svg")
     no-repeat center;
 }
 

@@ -91,7 +91,7 @@ nav .burger-menu {
 /* HEADING SECTION */
 
 .heading {
-  background: url("../assets/imgs/image\ 1.jpg");
+  background: url("../../assets/imgs/image\ 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +157,7 @@ nav .burger-menu {
 .search div:nth-child(1) > input {  
   border: 1px solid #dedede;
   border-radius: 5px;
-  background-image: url("../assets/icon/Search.svg");
+  background-image: url("../../assets/icon/Search.svg");
   background-position: 20px 20px;
   background-repeat: no-repeat;
   padding: 20px 15px 20px 18px;
@@ -237,67 +237,10 @@ nav .burger-menu {
 .movies .movie-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* grid-template-areas:
-    "M1 M2 M3 M4"
-    "M5 M6 M7 M8"
-    "M9 M10 M11 M12"; */
+  grid-template-rows: repeat(3, 1fr);  
   gap: 16px;
 }
 
-/* .movies .movie-list .movie > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .movies .movie-list .movie:nth-child(1) {
-  grid-area: M1;
-}
-
-.movies .movie-list .movie:nth-child(2) {
-  grid-area: M2;
-}
-
-.movies .movie-list .movie:nth-child(3) {
-  grid-area: M3;
-}
-
-.movies .movie-list .movie:nth-child(4) {
-  grid-area: M4;
-}
-
-.movies .movie-list .movie:nth-child(5) {
-  grid-area: M5;
-}
-
-.movies .movie-list .movie:nth-child(6) {
-  grid-area: M6;
-}
-
-.movies .movie-list .movie:nth-child(7) {
-  grid-area: M7;
-}
-
-.movies .movie-list .movie:nth-child(8) {
-  grid-area: M8;
-}
-
-.movies .movie-list .movie:nth-child(9) {
-  grid-area: M9;
-}
-
-.movies .movie-list .movie:nth-child(10) {
-  grid-area: M10;
-}
-
-.movies .movie-list .movie:nth-child(11) {
-  grid-area: M11;
-}
-
-.movies .movie-list .movie:nth-child(12) {
-  grid-area: M12;
-} */
 
 .movies .movie-list .desc {
   margin-top: 19px;
@@ -313,51 +256,51 @@ nav .burger-menu {
 }
 
 .movies .movie-list .movie:nth-child(1) .img {
-  background: url("../assets/png/movie-h-1.png");
+  background: url("../../assets/png/movie-h-1.png");
 }
 
 .movies .movie-list .movie:nth-child(2) .img {
-  background: url("../assets/png/movie-h-2.png");
+  background: url("../../assets/png/movie-h-2.png");
 }
 
 .movies .movie-list .movie:nth-child(3) .img {
-  background: url("../assets/png/movie-h-3.png");
+  background: url("../../assets/png/movie-h-3.png");
 }
 
 .movies .movie-list .movie:nth-child(4) .img {
-  background: url("../assets/png/movie-h-4.png");
+  background: url("../../assets/png/movie-h-4.png");
 }
 
 .movies .movie-list .movie:nth-child(5) .img {
-  background: url("../assets/png/movie-h-1.png");
+  background: url("../../assets/png/movie-h-1.png");
 }
 
 .movies .movie-list .movie:nth-child(6) .img {
-  background: url("../assets/png/movie-h-2.png");
+  background: url("../../assets/png/movie-h-2.png");
 }
 
 .movies .movie-list .movie:nth-child(7) .img {
-  background: url("../assets/png/movie-h-3.png");
+  background: url("../../assets/png/movie-h-3.png");
 }
 
 .movies .movie-list .movie:nth-child(8) .img {
-  background: url("../assets/png/movie-h-4.png");
+  background: url("../../assets/png/movie-h-4.png");
 }
 
 .movies .movie-list .movie:nth-child(9) .img {
-  background: url("../assets/png/movie-h-1.png");
+  background: url("../../assets/png/movie-h-1.png");
 }
 
 .movies .movie-list .movie:nth-child(10) .img {
-  background: url("../assets/png/movie-h-2.png");
+  background: url("../../assets/png/movie-h-2.png");
 }
 
 .movies .movie-list .movie:nth-child(11) .img {
-  background: url("../assets/png/movie-h-3.png");
+  background: url("../../assets/png/movie-h-3.png");
 }
 
 .movies .movie-list .movie:nth-child(12) .img {
-  background: url("../assets/png/movie-h-4.png");
+  background: url("../../assets/png/movie-h-4.png");
 }
 
 .movies .movie .detail {
