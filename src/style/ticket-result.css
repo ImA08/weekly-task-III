@@ -1,0 +1,463 @@
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: #a0a3bd;
+  --font-secondary: #6e7191;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish", serif;
+}
+
+body > * {
+  padding: 0 230px;
+}
+
+nav {
+  display: flex;
+  font-size: 14px;
+  height: 104px;
+  padding: 27px 0;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.03);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+nav > a > img {
+  width: 130px;
+  height: 51px;
+  left: 130px;
+}
+
+nav div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+
+nav div:nth-of-type(1) a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 400;
+}
+
+nav div:nth-of-type(2) {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div:nth-of-type(2) a {
+  width: 92px;
+  height: 48px;
+
+  border-radius: 5px;
+  gap: 12px;
+  text-decoration: none;
+  padding: 12px;
+}
+
+nav div:nth-of-type(2) a:first-child {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+nav div:nth-of-type(2) a:nth-child(2) {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+nav > svg {
+  display: none;
+}
+
+/* HERO SECTION */
+
+main {
+  padding: 0;
+  background-color: rgba(236, 237, 242, 255);
+  display: flex;  
+  
+}
+
+.hero-section {
+  background: url("../../assets/imgs/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 60%;
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 334px 112px;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-section h1 {
+  background: url("../../assets/icon/tickitz\ 1.svg");
+  width: 276px;
+  height: 104px;
+}
+
+/* TICKET SECTION */
+
+
+.ticket-display .ticket {
+  position: relative;
+  height: 635px;
+  width: 320px;
+  margin: 93px 150px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-display .ticket .qr-code {
+  background: url("../../assets/icon/QR\ Code\ 1.svg") no-repeat center;
+  height: 186px;
+  width: 186px;
+  margin: 32px 54px;
+}
+
+.ticket-display .ticket .zipp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ticket-display .ticket .circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(236, 237, 242, 255);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ticket-display .ticket .circle:nth-child(1) {
+  left: -20px;
+}
+
+.ticket-display .ticket .circle:nth-child(3) {
+  right: -20px;
+}
+
+.ticket-display .ticket .zipp p {
+  border-bottom: 3px dashed rgba(160, 163, 189, 0.2);
+  height: 1px;
+  flex: 1;
+  margin: 0 16px;
+}
+
+
+
+.ticket-display .btn {
+  margin: 24px 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket-display .btn button{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(236, 237, 242, 255);
+    border: 1px solid var(--primary-color);
+    justify-content: center;
+    gap: 23px;
+    border-radius: 5px;
+}
+
+.ticket-display .btn p {
+    font-weight: 700;
+    font-size: 16px; 
+    color: var(--primary-color);   
+}
+
+.ticket-display .btn button:hover{
+    background-color: var(--primary-color);
+}
+
+.ticket-display .btn button:hover p{
+    color: #fff;
+}
+.ticket-display .btn button:hover img{
+    display: none;
+}
+
+.ticket-display .ticket .grit-detail{
+    display: grid;
+    gap: 30px;
+    padding: 40px 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);}
+
+.ticket-display .ticket .grit-detail div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ticket-display .ticket .grit-detail h3{
+    font-size: 12px;
+    font-weight: 600;
+    color: #AAAAAA;
+}
+
+.ticket-display .ticket .grit-detail p{
+    font: 16px;
+    font-weight: 600;
+    color: #14142B; 
+    height: 26px;   
+    overflow: hidden;
+}
+
+.ticket-display .ticket .total {
+    display: flex ;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 24px;
+    width: 90%;
+    margin: 35px 0;
+    border: 1px solid #DEDEDE;
+}
+
+.ticket-display .ticket .total p,
+.ticket-display .ticket .total span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* FOOTER */
+footer {
+  margin-top: 28px;
+  padding: 0 130px;
+}
+
+footer > div {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+footer > div > div {
+  width: 285;
+  flex-direction: column;
+  margin-top: 95px;
+  display: flex;
+  width: 284px;
+  gap: 16px;
+}
+
+footer > div > div p {
+  color: var(--font-secondary);
+}
+
+footer > div div:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+footer > div div:nth-child(2) a {
+  text-decoration: none;
+  color: var(--font-secondary);
+}
+
+footer > div div:nth-child(3) div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div div:nth-child(3) > div img:nth-of-type(1) {
+  width: 122px;
+  height: 45px;
+}
+
+footer > div div:nth-child(3) > div img:nth-of-type(2) {
+  width: 122px;
+  height: 45px;
+}
+
+footer > div div:nth-child(3) > div img:nth-of-type(3) {
+  width: 122px;
+  height: 45px;
+}
+
+footer > div div:nth-child(4) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer > div div:nth-child(4) a {
+  display: flex;
+  gap: 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--font-secondary);
+}
+
+footer > div div:nth-child(4) a img {
+  width: 24px;
+  height: 24px;
+}
+
+footer > p {
+  text-align: center;
+  padding: 51px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-secondary);
+}
+
+/*
+  
+  MEDIA QUERRY
+  
+  */
+
+@media (max-width: 480px) {
+  body > * {
+    padding: 12px;
+  }
+
+  /* NAV SECTION */
+
+  nav {
+    padding: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > a > img {
+    width: 120px;
+    height: 31px;
+  }
+
+  nav div:nth-child(2),
+  nav div:nth-child(3) {
+    display: none;
+  }
+
+  nav .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  nav .burger-menu .line:nth-child(1) {
+    position: absolute;
+    border-top: 2px solid black;
+    width: 16px;
+    height: 2px;
+    display: block;
+  }
+
+  nav .burger-menu .line:nth-child(2) {
+    position: absolute;
+    border-top: 2px solid black;
+    width: 8px;
+    height: 2px;
+    display: block;
+    top: 9px;
+    right: 8px;
+  }
+
+  nav .burger-menu .line:nth-child(3) {
+    position: absolute;
+    border-bottom: 2px solid black;
+    width: 16px;
+    height: 2px;
+    display: block;
+    bottom: 5px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(1) {
+    transition: 2s;
+    rotate: -45deg;
+    transform-origin: top right;
+    width: 23px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(2) {
+    transition: 500ms;
+    /* rotate: -45deg; */
+    transform-origin: top right;
+    width: 0px;
+  }
+
+  nav .burger-menu:hover .line:nth-child(3) {
+    transition: 2s;
+    rotate: 45deg;
+    transform-origin: top right;
+    width: 23px;
+  }
+
+  /* FOOTER SECTION */
+
+  footer > div {
+    flex-direction: column;
+    margin-left: 80px;
+  }
+
+  footer > div div:nth-child(3) div {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  footer > div div:nth-child(3) > div img:nth-of-type(1) {
+    width: 81px;
+    height: 30px;
+  }
+
+  footer > div div:nth-child(3) > div img:nth-of-type(2) {
+    width: 81px;
+    height: 30px;
+  }
+
+  footer > div div:nth-child(3) > div img:nth-of-type(3) {
+    width: 81px;
+    height: 30px;
+  }
+
+  footer > div div:nth-child(4) > div {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  footer > div div:nth-child(4) span {
+    display: none;
+  }
+}
