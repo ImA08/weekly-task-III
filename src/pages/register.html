@@ -13,6 +13,7 @@
     />
     <!-- External CSS -->
     <link rel="stylesheet" href="../style/register.css" />
+    <script type="module" src="../js/register.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,7 +36,8 @@
         <section>
           <form>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Write your email" />
+            <input type="text" id="email" placeholder="Write your email" />
+            <p class="invalid-email">Email tidak valid!</p>
             <label for="password">Password</label>
             <div>
               <input
@@ -45,6 +47,7 @@
               />
               <img src="../../assets/svg/eye 1.svg" alt="show password" />
             </div>
+            <p class="invalid-email">Password harus mengandung: "Aa", "0-9", "_", !</p>
             <div class="agreement">
               <input
                 type="checkbox"
@@ -53,7 +56,8 @@
               />
               <label for="term-conditions">I agree to terms & conditions</label>
             </div>
-            <button type="button">Join for free</button>
+            <p class="not-checked">Harap setuju syarat & ketentuan!</p>
+            <button type="submit">Join for free</button>
           </form>
         </section>
         <section>
