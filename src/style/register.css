@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: #a0a3bd;
+  --font-secondary: #6e7191;
+}
+
 body {
   font-family: "Mulish", serif;
   min-height: 100vh;
@@ -34,7 +40,13 @@ header {
   padding: 52px 10px;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
+
+.register .steps {
+  display: none;
+}
+
 
 .register form {
   display: flex;
@@ -59,13 +71,32 @@ header {
   padding-right: 5px;
 }
 
+.register form .agreement{
+  border: none;
+  align-self: self-start;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.register form .agreement label{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.register form .agreement input{
+  height: 18px;
+  width: 18px;
+}
+
 .register form div input:focus {
   outline: none;
 }
 
-.register form div img {
+.register form .alternative-login img {
   cursor: pointer;
 }
+
 
 .register form button {
   background-color: #1d4ed8;
@@ -113,6 +144,11 @@ section:nth-child(3) div:last-child div {
   width: 64px;
   height: 64px;
   position: relative;
+  cursor: pointer;
+}
+
+section:nth-child(3) div:last-child div p {
+  display: none;
 }
 
 section:nth-child(3) div:last-child div img {
@@ -122,9 +158,7 @@ section:nth-child(3) div:last-child div img {
   transform: translate(-50%, -50%);
 }
 
-
 /* MEDIA  */
-
 
 @media (min-width: 481px) {
   body {
@@ -133,27 +167,44 @@ section:nth-child(3) div:last-child div img {
     flex-direction: column;
   }
 
-  
   .register {
     width: 546px;
     align-items: center;
   }
-  
-  
+
   .register section {
     width: 400px;
   }
 
-  .register section:nth-child(1){
+  .register section:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 46px;
   }
-  
+
   .register section:nth-child(1) div:nth-of-type(2),
-  .register section:nth-child(1) div:nth-of-type(4){
+  .register section:nth-child(1) div:nth-of-type(4) {
     border-bottom: 1px dashed black;
-    width: 70px;    
+    width: 70px;
+  }
+
+  section:nth-child(3) div:last-child div {
+    display: flex;
+    width: 182px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section:nth-child(3) div:last-child div img {
+    left: 20%;
+  }
+
+  section:nth-child(3) div:last-child div p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
