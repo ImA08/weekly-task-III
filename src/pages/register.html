@@ -16,46 +16,71 @@
   </head>
   <body>
     <header>
-      <img src="../../assets/imgs/logo.png" alt="Logo Tickitz" width="85" height="32" />
+      <img
+        src="../../assets/imgs/logo.png"
+        alt="Logo Tickitz"
+        width="85"
+        height="32"
+      />
     </header>
     <main>
       <div class="register">
-        <section>
-          <div><img src="../../assets/icon/arrow-reg-1.svg" alt=""></div>
+        <section class="steps">
+          <div><img src="../../assets/icon/arrow-reg-1.svg" alt="" /></div>
           <div></div>
-          <div><img src="../../assets/icon/arrow-reg-2.svg" alt=""></div>
+          <div><img src="../../assets/icon/arrow-reg-2.svg" alt="" /></div>
           <div></div>
-          <div><img src="../../assets/icon/arrow-reg-3.svg" alt=""></div>
+          <div><img src="../../assets/icon/arrow-reg-3.svg" alt="" /></div>
         </section>
-      <section>
-        <form>
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Write your email" />
-          <label for="password">Password</label>
+        <section>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Write your email" />
+            <label for="password">Password</label>
+            <div>
+              <input
+                type="password"
+                id="password"
+                placeholder="Write your password"
+              />
+              <img src="../../assets/svg/eye 1.svg" alt="show password" />
+            </div>
+            <div class="agreement">
+              <input
+                type="checkbox"
+                name="term-conditions"
+                id="term-conditions"
+              />
+              <label for="term-conditions">I agree to terms & conditions</label>
+            </div>
+            <button type="button">Join for free</button>
+          </form>
+        </section>
+        <section>
+          <p>Already have an account? <a href="">Log in</a></p>
           <div>
-            <input type="password" id="password" placeholder="Write your password" />
-            <img src="../../assets/svg/eye 1.svg" alt="show password" />
+            <div></div>
+            <p>or</p>
+            <div></div>
           </div>
-          <button type="button">Join for free</button>
-        </form>
-      </section>
-      <section>
-        <p>Already have an account? <a href="">Log in</a></p>
-        <div>
-          <div></div>
-          <p>or</p>
-          <div></div>
-        </div>
-        <div>
-          <div>
-            <img src="../../assets/svg/flat-color-icons_google.svg" alt="Logo Google" />
+          <div class="login-option">
+            <div>
+              <img
+                src="../../assets/svg/flat-color-icons_google.svg"
+                alt="Logo Google"
+              />
+              <p>Google</p>
+            </div>
+            <div>
+              <img
+                src="../../assets/svg/bx_bxl-facebook-circle.svg"
+                alt="Logo Facebook"
+              />
+              <p>Facebook</p>
+            </div>
           </div>
-          <div>
-            <img src="../../assets/svg/bx_bxl-facebook-circle.svg" alt="Logo Facebook" />
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
