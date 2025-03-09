@@ -93,10 +93,16 @@ header {
   cursor: pointer;
 }
 
-.register form > a {
+.register form a {
   text-decoration: none;
   align-self: flex-end;
   color: var(--primary-color);
+  font-size: 14px;
+}
+
+.register form > p{
+  align-self: flex-end;
+  font-size: 14px;
 }
 
 .register form button {
