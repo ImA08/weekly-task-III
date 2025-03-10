@@ -61,9 +61,20 @@ header {
 
 .register form p {
   color: red;
-  font-style: italic;
-  visibility: hidden;
+  font-style: italic;  
   margin-bottom: 10px;
+}
+
+.register form p:nth-of-type(1){
+  visibility: hidden;
+}
+
+.register form p:nth-of-type(2){
+  visibility: hidden;
+}
+
+.register form p:nth-of-type(3){
+  visibility: hidden;
 }
 
 .register form div {
@@ -174,6 +185,48 @@ section:nth-child(3) div:last-child div img {
   transform: translate(-50%, -50%);
 }
 
+section.pop-up {
+  display: none;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+section.pop-up::before{
+  content: ""; 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+section.pop-up .message {
+  position: absolute;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  top: 25%;
+  left: 35%;
+  width: 450px;
+  height: 200px;
+  border: 3px solid #000;
+  background-color: #fff;
+  border-radius: 25px;
+  z-index: 999;
+}
+
+section.pop-up button{
+  width: 85px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+section.pop-up button:hover{
+  scale: 1.05;
+}
 /* MEDIA  */
 
 @media (min-width: 481px) {

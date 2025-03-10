@@ -209,6 +209,7 @@ nav .burger-menu {
   flex-direction: column;
   align-items: start;
   margin-bottom: 39px;
+  
 }
 
 .movies p:nth-child(1) {
@@ -619,10 +620,30 @@ MEDIA QUERRY
     height: 31px;
   }
 
-  nav div:nth-child(2),
-  nav div:nth-child(3) {
+    nav div:nth-child(3) {
     display: none;
   }
+
+  nav div:nth-child(2) {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  nav div:nth-child(2):a{
+    
+  }
+
+
+
 
   nav .burger-menu {
     display: flex;
